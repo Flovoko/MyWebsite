@@ -1,0 +1,87 @@
+body{
+    text-align: center;
+    height: fit-content;
+    background-color: rgb(54, 54, 58);
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    width: 100%;
+    background-image: linear-gradient(
+                    45deg, 
+                    #74b47e, 
+                    #8db67d, 
+                    #719e60
+                  );
+}
+
+.nav{
+    padding-left: 70%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    list-style: none;
+}
+
+.nav li{
+    display: inline-block;
+}
+
+.nav li img{
+    padding-right: 70%;
+}
+
+.nav li a{
+    color: white;
+    text-decoration: none;
+}
+
+.nav li a:hover{
+    color: gray;
+}
+
+section{
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 100vh;
+    max-height: 100vh;
+}
+
+.section-title{
+    color: white;
+    font-size: 30pt;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.section-text{
+    color: white;
+    font-size: 15pt;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.diagonal {
+    --skew-angle: -5deg;
+    --background: linear-gradient(
+                    45deg, 
+                    #74b47e, 
+                    #8db67d, 
+                    #719e60
+                  );
+  
+    position: relative;
+    isolation: isolate;
+}
+  
+.diagonal::after {
+    content: '';
+    background: var(--background);
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    transform: skewY(var(--skew-angle));
+}
+  

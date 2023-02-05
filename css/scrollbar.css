@@ -1,0 +1,22 @@
+::-webkit-scrollbar{
+    width: 5px;
+    background-color: #000000;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #76A08B;
+    border-radius: 20px;
+}
+
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: 0.5s ease;
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
